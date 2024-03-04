@@ -1,0 +1,60 @@
+{
+  "id": "2c766e3b-eb47-45ad-9849-fe8f5a882098",
+  "version": "2.0",
+  "name": "test",
+  "url": "https://www.govinfo.gov",
+  "tests": [{
+    "id": "e8e85169-1560-4de4-baeb-a46539002ff7",
+    "name": "test.side",
+    "commands": [{
+      "id": "dd4e53f6-b005-4b6d-b57d-ceb16d203546",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c35b682b-3c30-49d0-acca-60b165af1c4e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1467x843",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5659e166-a0b6-486a-b515-8bc7290c0da4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=National Defense Authorization Act for Fiscal Year 2024, H.R. 2670",
+      "targets": [
+        ["linkText=National Defense Authorization Act for Fiscal Year 2024, H.R. 2670", "linkText"],
+        ["css=#trendingSection li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'National Defense Authorization Act for Fiscal Year 2024, H.R. 2670')]", "xpath:link"],
+        ["xpath=//div[@id='trendingSection']/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/link/bills/118/hr/2670')]", "xpath:href"],
+        ["xpath=//section/div/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'National Defense Authorization Act for Fiscal Year 2024, H.R. 2670')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8034",
+      "windowTimeout": 2000
+    }, {
+      "id": "41851ac3-9c03-4e42-9366-6be382304cd5",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8034}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9fbad6b6-8306-4105-8ba4-269932345526",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e8e85169-1560-4de4-baeb-a46539002ff7"]
+  }],
+  "urls": ["https://www.govinfo.gov/"],
+  "plugins": []
+}
